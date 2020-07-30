@@ -19,6 +19,15 @@
     ```
   git push origin [tag]/git push origin --tags
   ```
+ * 拉取远程仓库并合并
+     ```
+     git pull
+     ```
+* 拉取远程仓库到tmp分支 + 合并
+     ```
+     git fetch origin master:tmp   +   git merge tmp
+     ```
+
 ## 模块扩展
 * 输入隐藏
     ```
@@ -32,3 +41,6 @@
   hash.updata(pwd.encode) # 算法加密
   pwd = hash.hexdigest() # 提取加密后的密码
   ```
+
+
+
