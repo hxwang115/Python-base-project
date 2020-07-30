@@ -19,3 +19,11 @@
     ```
   git push origin [tag]/git push origin --tags
   ```
+* 拉取远程仓库并合并
+     ```
+     git pull
+     ```
+* 拉取远程仓库到tmp分支 + 合并
+     ```
+     git fetch origin master:tmp   +   git merge tmp
+     ```
