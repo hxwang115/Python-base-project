@@ -19,3 +19,16 @@
     ```
   git push origin [tag]/git push origin --tags
   ```
+## 模块扩展
+* 输入隐藏
+    ```
+  imort getpass
+  pwd = getpass.getpass('输入提示')
+  ```
+* 转换加密
+    ```
+  import hashlib
+  hash = hashlib.md5() # 生成对象
+  hash.updata(pwd.encode) # 算法加密
+  pwd = hash.hexdigest() # 提取加密后的密码
+  ```
